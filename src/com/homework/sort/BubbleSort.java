@@ -19,7 +19,7 @@ public class BubbleSort {
         }
         long endTime = System.currentTimeMillis();
         long diffTime = endTime - startTime;
-        System.out.println("\nОтсортированный массив: \n" + Arrays.toString(arrInts) + "\nВремя сортировка: " + diffTime + "мс");
+        System.out.println("\nОтсортированный массив: \n" + Arrays.toString(arrInts) + "\nВремя сортировки: " + diffTime + "мс");
         return arrInts;
     }
 }
