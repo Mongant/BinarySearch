@@ -1,5 +1,6 @@
 package com.homework;
 
+import com.homework.search.BinarySearch;
 import com.homework.sort.*;
 import com.homework.utils.RandomGenerator;
 import java.util.Arrays;
@@ -11,6 +12,6 @@ public class MainApp {
         mergeSort.sort();
         System.out.println(Arrays.toString(mergeSort.getSourceArray()));
         BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.sort(RandomGenerator.randomArr(20));
+        BinarySearch.search(bubbleSort.sort(RandomGenerator.randomArr(20)), 7);
     }
 }
