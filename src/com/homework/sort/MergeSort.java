@@ -11,14 +11,14 @@ public class MergeSort {
 
     public void sort() {
         this.tempArr = new int[sourceArray.length];
-        mergesort(0, sourceArray.length - 1);
+        mergeSort(0, sourceArray.length - 1);
     }
 
-    private void mergesort(int minItem, int maxItem) {
+    private void mergeSort(int minItem, int maxItem) {
         if (minItem < maxItem) {
             int middleItem = minItem + (maxItem - minItem) / 2;
-            mergesort(minItem, middleItem);
-            mergesort(middleItem + 1, maxItem);
+            mergeSort(minItem, middleItem);
+            mergeSort(middleItem + 1, maxItem);
             merge(minItem, middleItem, maxItem);
         }
     }
