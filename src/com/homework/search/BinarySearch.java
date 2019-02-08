@@ -10,9 +10,9 @@ public class BinarySearch {
 
         position = last / 2;
         long startTime = System.currentTimeMillis();
-        while ((array[position] != item) && (first <= last)) {
+        while ((array[position - 1] != item) && (first <= last)) {
             comparisonCount++;
-            if (array[position] > item) {
+            if (array[position - 1] > item) {
                 last = position - 1;
             } else {
                 first = position + 1;
